@@ -12,7 +12,41 @@
 		551085571F43DA3500E7E622 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 551085551F43DA3400E7E622 /* Main.storyboard */; };
 		551085591F43DA3500E7E622 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 551085581F43DA3500E7E622 /* Assets.xcassets */; };
 		5510855C1F43DA3500E7E622 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5510855A1F43DA3500E7E622 /* LaunchScreen.storyboard */; };
+		5510856F1F43DAB400E7E622 /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5510856E1F43DAAF00E7E622 /* AudioKit.framework */; };
+		551085701F43DAB400E7E622 /* AudioKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5510856E1F43DAAF00E7E622 /* AudioKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		551085771F43DB1D00E7E622 /* TestSequencer.m in Sources */ = {isa = PBXBuildFile; fileRef = 551085761F43DB1D00E7E622 /* TestSequencer.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5510856D1F43DAAF00E7E622 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 551085691F43DAAE00E7E622 /* AudioKit For iOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C42F35001C057E03000E937C;
+			remoteInfo = AudioKit;
+		};
+		551085711F43DAB400E7E622 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 551085691F43DAAE00E7E622 /* AudioKit For iOS.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C42F34FF1C057E03000E937C;
+			remoteInfo = AudioKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		551085731F43DAB400E7E622 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				551085701F43DAB400E7E622 /* AudioKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5510854E1F43DA3400E7E622 /* MidiTimingTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MidiTimingTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +56,10 @@
 		551085581F43DA3500E7E622 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5510855B1F43DA3500E7E622 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5510855D1F43DA3500E7E622 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		551085691F43DAAE00E7E622 /* AudioKit For iOS.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "AudioKit For iOS.xcodeproj"; path = "../AudioKit/AudioKit/iOS/AudioKit For iOS.xcodeproj"; sourceTree = "<group>"; };
+		551085741F43DB1D00E7E622 /* MidiTimingTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MidiTimingTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		551085751F43DB1D00E7E622 /* TestSequencer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestSequencer.h; sourceTree = "<group>"; };
+		551085761F43DB1D00E7E622 /* TestSequencer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestSequencer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5510856F1F43DAB400E7E622 /* AudioKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +79,7 @@
 			children = (
 				551085501F43DA3400E7E622 /* MidiTimingTest */,
 				5510854F1F43DA3400E7E622 /* Products */,
+				551085691F43DAAE00E7E622 /* AudioKit For iOS.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +96,23 @@
 			children = (
 				551085511F43DA3400E7E622 /* AppDelegate.swift */,
 				551085531F43DA3400E7E622 /* ViewController.swift */,
+				551085751F43DB1D00E7E622 /* TestSequencer.h */,
+				551085761F43DB1D00E7E622 /* TestSequencer.m */,
 				551085551F43DA3400E7E622 /* Main.storyboard */,
 				551085581F43DA3500E7E622 /* Assets.xcassets */,
 				5510855A1F43DA3500E7E622 /* LaunchScreen.storyboard */,
 				5510855D1F43DA3500E7E622 /* Info.plist */,
+				551085741F43DB1D00E7E622 /* MidiTimingTest-Bridging-Header.h */,
 			);
 			path = MidiTimingTest;
+			sourceTree = "<group>";
+		};
+		5510856A1F43DAAE00E7E622 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5510856E1F43DAAF00E7E622 /* AudioKit.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,10 +125,12 @@
 				5510854A1F43DA3400E7E622 /* Sources */,
 				5510854B1F43DA3400E7E622 /* Frameworks */,
 				5510854C1F43DA3400E7E622 /* Resources */,
+				551085731F43DAB400E7E622 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				551085721F43DAB400E7E622 /* PBXTargetDependency */,
 			);
 			name = MidiTimingTest;
 			productName = MidiTimingTest;
@@ -97,6 +150,7 @@
 					5510854D1F43DA3400E7E622 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = PM27ULWQ66;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -112,12 +166,28 @@
 			mainGroup = 551085451F43DA3400E7E622;
 			productRefGroup = 5510854F1F43DA3400E7E622 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 5510856A1F43DAAE00E7E622 /* Products */;
+					ProjectRef = 551085691F43DAAE00E7E622 /* AudioKit For iOS.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				5510854D1F43DA3400E7E622 /* MidiTimingTest */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		5510856E1F43DAAF00E7E622 /* AudioKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AudioKit.framework;
+			remoteRef = 5510856D1F43DAAF00E7E622 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		5510854C1F43DA3400E7E622 /* Resources */ = {
@@ -138,11 +208,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				551085541F43DA3400E7E622 /* ViewController.swift in Sources */,
+				551085771F43DB1D00E7E622 /* TestSequencer.m in Sources */,
 				551085521F43DA3400E7E622 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		551085721F43DAB400E7E622 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AudioKit;
+			targetProxy = 551085711F43DAB400E7E622 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		551085551F43DA3400E7E622 /* Main.storyboard */ = {
@@ -262,12 +341,16 @@
 		551085611F43DA3500E7E622 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = PM27ULWQ66;
 				INFOPLIST_FILE = MidiTimingTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.oneill.MidiTimingTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MidiTimingTest/MidiTimingTest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -275,12 +358,15 @@
 		551085621F43DA3500E7E622 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = PM27ULWQ66;
 				INFOPLIST_FILE = MidiTimingTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.oneill.MidiTimingTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MidiTimingTest/MidiTimingTest-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
